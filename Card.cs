@@ -8,7 +8,7 @@ namespace ProjectHigherLower
         private string colour;
         private string value;
         private int points;
-        private static string[] allowedSuits = { "♡", "♢", "♧", "♤" };
+        private static string[] allowedSuits = { "♡", "♧", "♢", "♤" };
         private static string[] allowedValues = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A" };
 
         /**
@@ -33,6 +33,8 @@ namespace ProjectHigherLower
             ConsoleColor oldBackground = Console.BackgroundColor;
             ConsoleColor oldForeground = Console.ForegroundColor;
 
+            Console.Write(" ");
+
             //Change the console colour to new colour
             Console.ForegroundColor = ConsoleColor.Black;
             Console.BackgroundColor = ConsoleColor.White;
@@ -49,6 +51,8 @@ namespace ProjectHigherLower
             //Change the console colours back to the old values (as stored in begin of method)
             Console.ForegroundColor = oldForeground;
             Console.BackgroundColor = oldBackground;
+
+            Console.Write(" ");
         }
 
         /**
